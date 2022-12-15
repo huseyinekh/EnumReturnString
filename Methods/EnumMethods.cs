@@ -19,7 +19,7 @@ namespace EnumReturnString.Methods
         {
             try
             {
-                var enumType = typeof(ConnectionStrings);
+                var enumType = typeof(T);
                 var memberInfos =
                 enumType.GetMember(enumVal.ToString());
                 var enumValueMemberInfo = memberInfos.FirstOrDefault(m =>
